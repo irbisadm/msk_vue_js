@@ -1,0 +1,23 @@
+{
+  "name": "msk_vue_js",
+  "version": "1.0.0",
+  "description": "---\r {\r     \"home\": \"true\",\r     \"features\": [\r         {\"title\":\"1111\",\"details\":\"12121\"},\r         {\"title\":\"1111\",\"details\":\"12121\"}\r     ],\r     \"events\": [\r         {\"title\":\"MSK VUE.JS #1\", \"place\":\"Офис Voximplant\",\"date\":\"18.07.2019\",\"link\":\"meetup_1\"},\r         {\"title\":\"MSK VUE.JS #2\", \"place\":\"Офис Google\",\"date\":\"15.08.2019\",\"link\":\"meetup_2\"},\r         {\"title\":\"MSK VUE.JS #3\", \"place\":\"Офис Voximplant\",\"date\":\"19.09.2019\",\"link\":\"meetup_3\"},\r         {\"title\":\"INTERCOM VUE.JS\", \"place\":\"ЦДП\",\"date\":\"19.09.2019\",\"link\":\"intercom\"}\r     ]\r }\r ---",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vue/babel-preset-jsx": "^1.0.0",
+    "postcss-mixins": "^6.2.1",
+    "postcss-nested": "^4.1.2",
+    "pug": "^2.0.4",
+    "pug-plain-loader": "^1.0.0",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "vue": "^2.6.10",
+    "vue-property-decorator": "^8.2.1",
+    "vuepress": "^1.0.2"
+  }
+}

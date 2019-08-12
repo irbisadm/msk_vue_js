@@ -1,18 +1,59 @@
 ---
 {
     "date":"19.09.2019",
-    "time":"19:00",
+    "time":"19:00 — 22:00",
     "kind":"meetup",
     "number":"#3",
-    "place":"Офис Voximplant",
+    "place":"Офис Mail.ru",
     "regLink":"https://voximplant.timepad.ru/event/986752/",
-    "callForPaper":"https://docs.google.com/forms/d/e/1FAIpQLSemqJRsnBp4MzC-25qkNs1_-KBri7kc2ALTea1KPB3gBn2XvA/viewform",
-    
+    "callForPaper":"https://docs.google.com/forms/d/e/1FAIpQLSdjvYW4xu9MT-8VRIIPTF5FSzq0ePEQGrH28h0z_xUtcdI9ew/viewform",
+    "timeline":[
+        {
+            "time":"18:00 — 19:00",
+            "name":"Сбор гостей, регистрация",
+        },
+        {
+            "time":"19:00 — 19:45",
+            "header":"Алексей Клюев – руководитель фронтенд-команды Delivery Club, Mail.ru Group",
+            "name":"Специфика рендеринга vue.js-приложений на сервере",
+            "description":"– Зачем нужен серверный рендеринг фронтэнд приложению или сайту?<br/>– Какие инструменты стоит применять под задачи проекта?<br/>– Интересные задачи по серверному рендерингу: загрузка данных, разделение сред выполнения кода, и другие.<br/>– На что обращаем внимание при деплое, что замеряем, как анализируем метрики?",
+        },
+        {
+            "time":"19:45 — 20:30",
+            "header":"Дмитрий Молотков – Core Nuxt.js developer",
+            "name": "Тема уточняется.",
+            "description":"Описание уточняется."
+        },
+        {
+            "time":"20:30 — 21:00",
+            "header":"Копачёв Виталий – Senior Frontend Developer",
+            "name": "Организация работы с API на Vue.js.",
+            "description":"В процессе работы я из проекта в проект тащу свой «велосипед», постоянного его подтачиваю или модифицирую под конкретные нужды. Хотел бы рассказать о нем, его плюсах и минусах. Кроме этого, поговорим о том, какие «велосипеды» для работы с API существуют."
+        },
+        {
+            "time":"21:00 — 22:00",
+            "name":"Свободное общение.",
+        },
+    ],
+    "speakers": [
+        {
+            "avatar":"/speakers/kluev.jpg",
+            "name":"Алексей Клюев",
+            "company":"Руководитель фронтенд-команды Delivery Club, Mail.ru Group",
+            "bio":"Frontend Developer. Разрабатываю приложения с использованием Angular2+, Vuejs. Предпочитаю TypeScript. Также имею большой опыт работы с AngularJS 1.x, знаком с React. Использую инструменты автоматизации, сборки и тестирования. При необходимости могу поддерживать полный стек с использованием NodeJS, PHP, Ruby, Python. Сейчас работаю тимлидом фронтэнд разработки: проектирую архитектуру фронтэнда, пишу код, обучаю коллег, провожу код-ревью, занимаюсь постановкой и контролем выполения задач."
+        },
+        {
+            "avatar":"/speakers/kopachyov.jpg",
+            "name":"Копачёв Виталий",
+            "company":"Разработчик от нашего комьюнити",
+            "bio":"В разработке около 4-х лет. Начинал с бекенд разработки. Технологии JS, Python. Путь фронтенд разработчика начинал с Angular4. Пробовал React. Сейчас старший разработчик направления фронтенд. Опыт Vue около года."
+        }
+    ],
     "partners": [
         {
-            "img":"/img/voximplant.png",
-            "link":"https://voximplant.com/",
-            "name":"Voximplant"
+            "img":"/img/mrg.png",
+            "link":"https://corp.mail.ru/ru/",
+            "name":"Mail.ru Group"
         },
         {
             "img":"/img/tproger_transparent_big.png",
@@ -20,7 +61,7 @@
             "name":"Tproger"
         },
     ],
-    "map":"https://yandex.ru/map-widget/v1/-/CCw77YZc",
-    "addr":"Москва, м. Тульская, ул. Мытная, д. 66",
+    "map":"https://yandex.ru/map-widget/v1/-/CBRINHxzHC",
+    "addr":"Москва, м. Аэропорт, Ленинградский проспект 39, стр. 79",
 }
 ---

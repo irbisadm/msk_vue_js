@@ -23,6 +23,7 @@
             h2 О нас
             Content(custom)
             a.btn-tg(href="https://t.me/msk_vue_js", target="_blank") telegram chat
+            a.btn-chanel(href="https://www.youtube.com/channel/UCp4bYTGrxZ27ifRxm29U5ow", target="_blank") YouTube канал
           .item.sticker_item
             img(src="./assets/art.code.vue.svg")
     Events(:items="activeEvents",title="Ближайшие события",:callForPlace="$page.frontmatter.callForPlace", id="events")
@@ -181,6 +182,23 @@
     line-height: 28px;
     color: #232E4B;
     background: url('./assets/tg_btn.svg') no-repeat;
+    display: block;
+    margin-top: 32px;
+    height: 40px;
+    background-position: 0 0;
+    padding-top: 12px;
+    padding-left: 88px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .btn-chanel {
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 28px;
+    color: #232E4B;
     display: block;
     margin-top: 32px;
     height: 40px;

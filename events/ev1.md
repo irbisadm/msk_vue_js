@@ -6,7 +6,7 @@
     "number":"#1",
     "place":"Офис Voximplant",
     "regLink":"https://voximplant.timepad.ru/event/986750/",
-    "callForPaper":"https://docs.google.com/forms/d/e/1FAIpQLSemqJRsnBp4MzC-25qkNs1_-KBri7kc2ALTea1KPB3gBn2XvA/viewform",
+    "callForPaper":"https://docs.google.com/forms/d/e/1FAIpQLSdjvYW4xu9MT-8VRIIPTF5FSzq0ePEQGrH28h0z_xUtcdI9ew/viewform",
     "timeline":[
         {
             "time":"18:30 — 19:00",
@@ -44,7 +44,7 @@
             "avatar":"/speakers/sheko.jpg",
             "name":"Игорь Шеко",
             "company":"Lead frond end, Voximplant",
-            "bio":"Lead Frontend разработчик компании Voximplant. До присоединения к команде Voximplant был сооснователем и техническим директором студии веб-разработки Appatbox и сервиса обратных звонков Rocketcallback. В настоящий момент разрабатывает WebSDK в Voximplant, участвует в социальных проектах для благотворительного фонда «Такие дела» и заботится о небольшой колонии пластиковых двухголовых динозавров. В составе команд разработки номинирован на несколько премий за Digital Storytelling в 2017 году (Visa pour l'image, Great Eight, Press Photo Digital Storytelling Contest) "
+            "bio":"До присоединения к команде Voximplant был сооснователем и техническим директором студии веб-разработки Appatbox и сервиса обратных звонков Rocketcallback. В настоящий момент разрабатывает WebSDK в Voximplant, участвует в социальных проектах для благотворительного фонда «Такие дела» и заботится о небольшой колонии пластиковых двухголовых динозавров. В составе команд разработки номинирован на несколько премий за Digital Storytelling в 2017 году (Visa pour l'image, Great Eight, Press Photo Digital Storytelling Contest) "
         },
         {
             "avatar":"/speakers/kobetc.jpg",
@@ -56,7 +56,7 @@
             "avatar":"/speakers/lesnikova.png",
             "name":"Ольга Лесникова",
             "company":"Senior Developer, Voximplant",
-            "bio":"Старший frontend-разработчик в компании Voximplant, занимается разработкой инструментов для клиентов платформы. Окончила философский факультет МГУ, искала себя в разных сферах — от преподавания до менеджмента. С веб-разработкой столкнулась почти случайно в 2015 и поняла, что пропала. Ранее работала в Mail.Ru Games и Ru-Center. Технофил, строит будущее, в котором билет на Луну будет стоить дешевле, чем кружка пива в лунном баре."
+            "bio":"Занимается разработкой инструментов для клиентов платформы. Окончила философский факультет МГУ, искала себя в разных сферах — от преподавания до менеджмента. С веб-разработкой столкнулась почти случайно в 2015 и поняла, что пропала. Ранее работала в Mail.Ru Games и Ru-Center. Технофил, строит будущее, в котором билет на Луну будет стоить дешевле, чем кружка пива в лунном баре."
         },
     ],
     "partners": [
@@ -71,6 +71,9 @@
             "name":"Tproger"
         },
     ],
+    "gallery":{
+        
+    },
     "map":"https://yandex.ru/map-widget/v1/-/CCw77YZc",
     "addr":"Москва, м. Тульская, ул. Мытная, д. 66",
 }

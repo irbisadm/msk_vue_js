@@ -39,6 +39,7 @@
               .speaker_name {{speaker.name}}
               .speaker_company {{speaker.company}}
               .speaker_bio {{speaker.bio}}
+
     Partners(:items="$page.frontmatter.partners", title="Партнеры этого события")
     .container_map
       .container

@@ -65,10 +65,8 @@
     }
 
     sortByDate(a, b): number {
-      const datePartsA = a.frontmatter.date.split(".");
-      const parsedDateA = new Date(`${datePartsA[1]}.${datePartsA[0]}.${datePartsA[2]}`);
-      const datePartsB = b.frontmatter.date.split(".");
-      const parsedDateB = new Date(`${datePartsB[1]}.${datePartsB[0]}.${datePartsB[2]}`);
+      const parsedDateA = a.frontmatter.date.split(".").reverse().join("");
+      const parsedDateB = b.frontmatter.date.split(".").reverse().join("");
       if (parsedDateA === parsedDateB) return 0;
       if (parsedDateA > parsedDateB) return 1;
       return -1;

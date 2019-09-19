@@ -21,8 +21,8 @@
         {
             "time":"19:45 — 20:30",
             "header":"Дмитрий Молотков – Core Nuxt.js developer",
-            "name": "Тема уточняется.",
-            "description":"Описание уточняется."
+            "name": "Nuxt.js from the Core",
+            "description":"- Почему начать с Nuxt.js быстрее, чем  vue-ssr?<br/>- Советы по перфомансу приложений на Nuxt.js.<br/>- Vue.js готовит v3, что нового ждет нас в Nuxt.js?<br/>- Немного о том, как Nuxt.js устроен изнутри."
         },
         {
             "time":"20:30 — 21:00",
@@ -36,6 +36,12 @@
         },
     ],
     "speakers": [
+        {
+            "avatar":"/speakers/aldarund.jpg",
+            "name":"Дмитрий Молотков",
+            "company":"Core Nuxt.js developer",
+            "bio":"Core Nuxt.js developer, Full Stack vue/js/python. После университета три года проработал в Intervale, отвечал за написание бэкенда для мобильного приложения «Сбербанка. Судя по веткам на Stack Overflow параллельно много работал над разными проектами, оттачивая навыки full stack разработчика. В насточщее время работает в кор-команде Nuxt.js. Любимый редактор — PyCharm, первый компьютер — ZX Spectrum."
+        },
         {
             "avatar":"/speakers/kluev.jpg",
             "name":"Алексей Клюев",

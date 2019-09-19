@@ -10,15 +10,25 @@
             "name":"Voximplant"
         },
         {
-            "img":"/img/tproger_transparent_big.png",
-            "link":"https://tproger.ru/",
-            "name":"Tproger"
-        },
-        {
             "img":"/img/google.svg",
             "link":"https://about.google/",
             "name":"Google"
         },
+        {
+            "img":"/img/mrg.png",
+            "link":"https://corp.mail.ru/ru/",
+            "name":"Mail.ru Group"
+        },
+        {
+            "img":"/img/raiffeisenbank.jpg",
+            "link":"https://www.raiffeisen.ru",
+            "name":"Raiffeisenbank"
+        },
+        {
+            "img":"/img/tproger_transparent_big.png",
+            "link":"https://tproger.ru/",
+            "name":"Tproger"
+        }
     ],
     "artifacts":[]
 }

@@ -200,9 +200,11 @@
     display: block;
     margin-top: 32px;
     height: 40px;
+    background: url('./assets/youtube.svg') no-repeat;
     background-position: 0 0;
     padding-top: 12px;
     padding-left: 88px;
+
 
     &:hover {
       text-decoration: underline;

@@ -28,6 +28,11 @@
             "img":"/img/tproger_transparent_big.png",
             "link":"https://tproger.ru/",
             "name":"Tproger"
+        },
+        {
+            "img":"/img/lovefrontend.jpg",
+            "link":"https://vk.com/love_frontend",
+            "name":"Love Frontend"
         }
     ],
     "artifacts":[]

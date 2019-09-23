@@ -39,7 +39,7 @@
               .speaker_name {{speaker.name}}
               .speaker_company {{speaker.company}}
               .speaker_bio {{speaker.bio}}
-
+    Videos(:items="eventsVideo",title="Видео с митапа")
     Partners(:items="$page.frontmatter.partners", title="Партнеры этого события")
     .container_map
       .container
@@ -51,12 +51,23 @@
 <script lang="ts">
   import {Component, Vue} from "vue-property-decorator";
   import Partners from "./Partners.vue";
+  import Videos from "./Videos.vue";
 
   @Component({
-    components: {Partners},
+    components: {Partners, Videos},
   })
   export default class Page extends Vue {
-
+    get eventsVideo() {
+      if (this.$page.frontmatter && this.$page.frontmatter.timeline) {
+        return this.$page.frontmatter.timeline.reduce((a, b) => {
+          if (b.video)
+            a.push(b.video);
+          return a;
+        }, []);
+      } else {
+        return [];
+      }
+    }
   }
 </script>
 

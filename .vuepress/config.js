@@ -12,7 +12,8 @@ module.exports = {
     ["link", {rel: "apple-touch-icon", href: "/site.webmanifest"}],
     ["link", {rel: "apple-touch-icon", color: "#00BE8E", href: "/safari-pinned-tab.svg"}],
     ["meta", {name: "msapplication-TileColor", content: "#00BE8E"}],
-    ["meta", {name: "theme-color", content: "#00BE8E"}]
+    ["meta", {name: "theme-color", content: "#00BE8E"}],
+    ["meta", {name: "google-site-verification", content: "3QwH-N-T2aPgSMIDwt6DlCaDUo1um65TLTR6EQ9D7-w"}]
   ],
   configureWebpack: {
     resolve: {

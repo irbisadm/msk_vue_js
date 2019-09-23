@@ -21,8 +21,8 @@
         },
         {
             "img":"/img/raiffeisenbank.jpg",
-            "link":"https://www.raiffeisen.ru",
-            "name":"Raiffeisenbank"
+            "link":"https://dgtl.raiffeisen.ru/",
+            "name":"Райффайзен DGTL"
         },
         {
             "img":"/img/tproger_transparent_big.png",

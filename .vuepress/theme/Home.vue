@@ -28,6 +28,7 @@
             img(src="./assets/art.code.vue.svg")
     Events(:items="activeEvents",title="Ближайшие события",:callForPlace="$page.frontmatter.callForPlace", id="events")
     Events(:items="endedEvents",title="Прошедшие события")
+    Videos(:items="eventsVideo",title="Видео с митапов")
     Partners(:items="$page.frontmatter.partners", title="С этими классными компаниями мы дружим")
     Partners(:items="$page.frontmatter.artifacts", title="Полка с медийными артефактами")
     .content_meetups
@@ -42,9 +43,10 @@
   import {Component, Vue} from "vue-property-decorator";
   import Partners from "./Partners.vue";
   import Events from "./Events.vue";
+  import Videos from "./Videos.vue";
 
   @Component({
-    components: {Partners, Events},
+    components: {Partners, Events, Videos},
   })
   export default class Home extends Vue {
     get activeEvents() {
@@ -72,6 +74,20 @@
       return -1;
     }
 
+    get eventsVideo() {
+      const events: any[] = this["$site"].pages.filter(i => i.path.indexOf("/events/") !== -1);
+      const videos = events.reduce((videoList, ev) => {
+        if (ev.frontmatter && ev.frontmatter.timeline) {
+          return videoList.concat(ev.frontmatter.timeline.reduce((a, b) => {
+            if (b.video)
+              a.push(b.video);
+            return a;
+          }, []));
+        }
+      }, []);
+      console.error(videos);
+      return videos;
+    }
     get endedEvents() {
       const events: any[] = this["$site"].pages.filter(i => i.path.indexOf("/events/") !== -1);
       const endedEvents = events.filter(ev => {

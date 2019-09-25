@@ -75,7 +75,7 @@
     }
 
     get eventsVideo() {
-      const events: any[] = this["$site"].pages.filter(i => i.path.indexOf("/events/") !== -1);
+      const events: any[] = this["$site"].pages.filter(i => i.path.indexOf("/events/") !== -1).sort(this.sortByDate);
       const videos = events.reduce((videoList, ev) => {
         if (ev.frontmatter && ev.frontmatter.timeline) {
           return videoList.concat(ev.frontmatter.timeline.reduce((a, b) => {

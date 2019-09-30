@@ -1,6 +1,7 @@
 ---
 {
     "date":"19.09.2019",
+    "timestamp":1568919600,
     "time":"19:00 — 22:00",
     "kind":"meetup",
     "number":"#3",
@@ -70,6 +71,10 @@
             "name":"Tproger"
         },
     ],
+    "gallery":{
+        "to":204,
+        "path":"/artifacts/ev3/"
+    },
     "map":"https://yandex.ru/map-widget/v1/-/CBRINHxzHC",
     "addr":"Москва, м. Аэропорт, Ленинградский проспект 39, стр. 79",
 }

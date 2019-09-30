@@ -1,6 +1,7 @@
 ---
 {
     "date":"17.10.2019",
+    "timestamp":1571338800,
     "time":"18:30 — 22:00",
     "kind":"meetup",
     "number":"#4",
@@ -21,8 +22,8 @@
         {
             "time":"20:00 — 20:30",
             "header":"Арсений Кутузов – Senior Frontend Developer, Raiffeisen Bank",
-            "name": "Тема уточняется",
-            "description":"Описание уточняется"
+            "name": "Как сколотить состояние на Vue",
+            "description":"Описания не будет!"
         },
         {
             "time":"20:30 — 21:00",

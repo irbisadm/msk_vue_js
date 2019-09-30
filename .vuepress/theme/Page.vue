@@ -18,6 +18,8 @@
             .date {{$page.frontmatter.date}}
             .date {{$page.frontmatter.time}}
             .place {{$page.frontmatter.place}}
+    Videos(:items="eventsVideo",title="Видео с митапа")
+    Galery(:gallery="eventGallery",title="Фото с митапа")
     .container_timing(v-if="$page.frontmatter.timeline && $page.frontmatter.timeline.length")
       .container
         h2 Расписание
@@ -39,7 +41,6 @@
               .speaker_name {{speaker.name}}
               .speaker_company {{speaker.company}}
               .speaker_bio {{speaker.bio}}
-    Videos(:items="eventsVideo",title="Видео с митапа")
     Partners(:items="$page.frontmatter.partners", title="Партнеры этого события")
     .container_map
       .container
@@ -52,9 +53,10 @@
   import {Component, Vue} from "vue-property-decorator";
   import Partners from "./Partners.vue";
   import Videos from "./Videos.vue";
+  import Galery from "./Galery.vue";
 
   @Component({
-    components: {Partners, Videos},
+    components: {Partners, Videos, Galery},
   })
   export default class Page extends Vue {
     get eventsVideo() {
@@ -66,6 +68,14 @@
         }, []);
       } else {
         return [];
+      }
+    }
+
+    get eventGallery() {
+      if (this.$page.frontmatter && this.$page.frontmatter.gallery) {
+        return this.$page.frontmatter.gallery;
+      } else {
+        return null;
       }
     }
   }

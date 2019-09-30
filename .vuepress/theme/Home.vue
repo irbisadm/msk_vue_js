@@ -27,7 +27,7 @@
           .item.sticker_item
             img(src="./assets/art.code.vue.svg")
     Events(:items="activeEvents",title="Ближайшие события",:callForPlace="$page.frontmatter.callForPlace", id="events")
-    Events(:items="endedEvents",title="Прошедшие события")
+    Events(:items="endedEvents",title="Прошедшие события (здесь лежат видео и фото)")
     Videos(:items="eventsVideo",title="Видео с митапов")
     Partners(:items="$page.frontmatter.partners", title="С этими классными компаниями мы дружим")
     Partners(:items="$page.frontmatter.artifacts", title="Полка с медийными артефактами")
@@ -52,14 +52,8 @@
     get activeEvents() {
       const events: any[] = this["$site"].pages.filter(i => i.path.indexOf("/events/") !== -1);
       const activeEvents = events.filter(ev => {
-        if (ev.frontmatter && ev.frontmatter.date) {
-          // const date = new Date(ev.frontmatter.data);
-          const dateParts = ev.frontmatter.date.split(".");
-          const parsedDate = new Date(`${dateParts[1]}.${dateParts[0]}.${dateParts[2]}`);
-          const maxTime = ((parsedDate.getTime() / 1000) | 0) + 86400;
-          if (maxTime > (((new Date()).getTime() / 1000) | 0)) {
-            return true;
-          }
+        if (ev.frontmatter && ev.frontmatter.timestamp) {
+          return (ev.frontmatter.timestamp > (new Date()).getTime() / 1000);
         }
         return false;
       }).sort(this.sortByDate);
@@ -92,13 +86,7 @@
       const events: any[] = this["$site"].pages.filter(i => i.path.indexOf("/events/") !== -1);
       const endedEvents = events.filter(ev => {
         if (ev.frontmatter && ev.frontmatter.date) {
-          // const date = new Date(ev.frontmatter.data);
-          const dateParts = ev.frontmatter.date.split(".");
-          const parsedDate = new Date(`${dateParts[1]}.${dateParts[0]}.${dateParts[2]}`);
-          const maxTime = ((parsedDate.getTime() / 1000) | 0) + 86400;
-          if (maxTime <= (((new Date()).getTime() / 1000) | 0)) {
-            return true;
-          }
+          return (ev.frontmatter.timestamp <= (new Date()).getTime() / 1000);
         }
         return false;
       }).sort(this.sortByDate);

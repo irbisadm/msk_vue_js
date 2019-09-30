@@ -1,6 +1,7 @@
 ---
 {
     "date":"18.07.2019",
+    "timestamp":1563476400,
     "time":"19:00 — 22:00",
     "kind":"meetup",
     "number":"#1",
@@ -75,7 +76,8 @@
         },
     ],
     "gallery":{
-        
+        "to":63,
+        "path":"/artifacts/ev1/"
     },
     "map":"https://yandex.ru/map-widget/v1/-/CCw77YZc",
     "addr":"Москва, м. Тульская, ул. Мытная, д. 66",

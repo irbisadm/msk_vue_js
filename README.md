@@ -33,6 +33,11 @@
             "img":"/img/lovefrontend.jpg",
             "link":"https://vk.com/love_frontend",
             "name":"Love Frontend"
+        },
+        {
+            "img":"/img/itmeeting.jpg",
+            "link":"https://t.me/ITMeeting",
+            "name":"IT Meeting"
         }
     ],
     "artifacts":[]

@@ -1,6 +1,7 @@
 ---
 {
     "date":"15.08.2019",
+    "timestamp":1565902800,
     "time":"19:00 — 21:30",
     "kind":"meetup",
     "number":"#2",
@@ -56,6 +57,10 @@
             "name":"Tproger"
         },
     ],
+    "gallery":{
+        "to":60,
+        "path":"/artifacts/ev2/"
+    },
     "map":"https://yandex.ru/map-widget/v1/-/CCwCq69Z",
     "addr":"Москва, м. Новокузнецкая, ул. Балчуг, д. 7",
 }

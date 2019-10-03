@@ -7,7 +7,8 @@
             img(src="./assets/logo_sm.svg")
           .btns
             a.btn(:href="$page.frontmatter.regLink",v-if="$page.frontmatter.regLink") Записаться
-            a.btn(:href="$page.frontmatter.callForPaper") Выступить
+            a.btn(:href="$page.frontmatter.callForPaper",v-if="$page.frontmatter.callForPaper") Выступить
+            span.mature-only(v-if="$page.frontmatter.isMatureOnly") 18+
     .hero
       .container
         .hero-flex
@@ -18,6 +19,10 @@
             .date {{$page.frontmatter.date}}
             .date {{$page.frontmatter.time}}
             .place {{$page.frontmatter.place}}
+    .container_agenda(v-if="$page.frontmatter.agenda")
+      .container
+        h2 О событии
+        .agenda {{$page.frontmatter.agenda}}
     Videos(:items="eventsVideo",title="Видео с митапа")
     Galery(:gallery="eventGallery",title="Фото с митапа")
     .container_timing(v-if="$page.frontmatter.timeline && $page.frontmatter.timeline.length")
@@ -82,6 +87,15 @@
 </script>
 
 <style scoped>
+  .container_agenda {
+    margin-bottom: 64px;
+  }
+
+  .mature-only {
+    color: red;
+    font-size: 3rem;
+    font-weight: bold;
+  }
   .speaker {
     padding-bottom: 32px;
     @media only screen and (min-width: 768px) {

@@ -77,9 +77,10 @@
               a.push(b.video);
             return a;
           }, []));
+        } else {
+          return videoList;
         }
       }, []);
-      console.error(videos);
       return videos;
     }
     get endedEvents() {

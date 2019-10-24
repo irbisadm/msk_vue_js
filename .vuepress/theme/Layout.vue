@@ -1,6 +1,7 @@
 <template lang=pug>
   .page
     Home(v-if="$page.frontmatter.home")
+    School(v-else-if="$page.frontmatter.school")
     Page(v-else)
     Footer
 </template>
@@ -10,11 +11,13 @@
   import Home from "./Home.vue";
   import Footer from "./Footer.vue";
   import Page from "./Page.vue";
+  import School from "./School.vue";
 
   @Component({
-    components: {Home, Footer, Page},
+    components: {School, Home, Footer, Page},
   })
   export default class Layout extends Vue {
+
   }
 </script>
 

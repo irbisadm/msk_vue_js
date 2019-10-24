@@ -16,19 +16,24 @@
               a.btn.btn_inversed(href="#events",v-if="activeEvents&&activeEvents.length") события
               a.btn.btn_inversed(:href="$page.frontmatter.callForPaper",target="_blank") стать спикером
             .hero_text Сообщество неравнодушных к технологии Vue.js разработчиков
+        nav.hero_menu
+          a(href="#events") События
+          a(href="/school.html") Школа спикеров
+          a(href="#videos") Видео
+
     .content_about
       .container
         .row-flex_content
           .item
             h2 О нас
             Content(custom)
-            a.btn-tg(href="https://t.me/msk_vue_js", target="_blank") telegram chat
+            a.btn-tg(href="https://t.me/msk_vue_js", target="_blank") #msk_vue_js
             a.btn-chanel(href="https://www.youtube.com/channel/UCp4bYTGrxZ27ifRxm29U5ow", target="_blank") YouTube канал
           .item.sticker_item
             img(src="./assets/art.code.vue.svg")
     Events(:items="activeEvents",title="Ближайшие события",:callForPlace="$page.frontmatter.callForPlace", id="events")
     Events(:items="endedEvents",title="Прошедшие события (здесь лежат видео и фото)")
-    Videos(:items="eventsVideo",title="Видео с митапов")
+    Videos(:items="eventsVideo",title="Видео с митапов",id="videos")
     Partners(:items="$page.frontmatter.partners", title="С этими классными компаниями мы дружим")
     Partners(:items="$page.frontmatter.artifacts", title="Полка с медийными артефактами")
     .content_meetups
@@ -83,6 +88,7 @@
       }, []);
       return videos;
     }
+
     get endedEvents() {
       const events: any[] = this["$site"].pages.filter(i => i.path.indexOf("/events/") !== -1);
       const endedEvents = events.filter(ev => {
@@ -124,11 +130,25 @@
   .hero {
     width: 100%;
     position: relative;
-    padding: 80px 0 62px 0;
+    padding: 80px 0 8px 0;
     background: #00BE8E;
     background: linear-gradient(180deg, rgba(35, 46, 75, 1) 0%, rgba(35, 46, 75, 1) 250px, rgba(0, 190, 142, 1) 250px,
     rgba(0, 190, 142, 1) 100%);
 
+    &_menu {
+      margin: 16px -16px 0 -16px;
+
+      a {
+        display: inline-block;
+        padding: 16px;
+        color: #fff;
+        text-decoration: none;
+
+        &:hover, &:active, &:focus {
+          text-decoration: underline;
+        }
+      }
+    }
     &_btns {
       height: 130px;
       padding-top: 80px;

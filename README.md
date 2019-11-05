@@ -25,6 +25,11 @@
             "name":"Райффайзен DGTL"
         },
         {
+            "img":"/img/domclick.png",
+            "link":"https://domclick.ru/",
+            "name":"ДомКлик"
+        },
+        {
             "img":"/img/tproger_transparent_big.png",
             "link":"https://tproger.ru/",
             "name":"Tproger"

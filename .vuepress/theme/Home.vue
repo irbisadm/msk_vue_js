@@ -16,10 +16,6 @@
               a.btn.btn_inversed(href="#events",v-if="activeEvents&&activeEvents.length") события
               a.btn.btn_inversed(:href="$page.frontmatter.callForPaper",target="_blank") стать спикером
             .hero_text Сообщество неравнодушных к технологии Vue.js разработчиков
-        nav.hero_menu
-          a(href="#events") События
-          a(href="/school.html") Школа спикеров
-          a(href="#videos") Видео
 
     .content_about
       .container

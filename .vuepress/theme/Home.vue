@@ -32,10 +32,33 @@
     Videos(:items="eventsVideo",title="Видео с митапов",id="videos")
     Partners(:items="$page.frontmatter.partners", title="С этими классными компаниями мы дружим")
     Partners(:items="$page.frontmatter.artifacts", title="Полка с медийными артефактами")
+    .orgs
+      .container
+        h2 Организаторы
+        .org_list
+          .org
+            img(src="/orgs/sheko.jpg")
+            .org_name Игорь Шеко
+            .org_tg @irbisadm
+          .org
+            img(src="/orgs/stolbova.jpg")
+            .org_name Елена Столбова
+            .org_tg @AlcaZeltser
+          .org
+            img(src="/orgs/litvintseva.jpg")
+            .org_name Елена Литвинцева
+            .org_tg @lemonlenni
+          .org
+            img(src="/orgs/leushina.jpg")
+            .org_name Дарья Леушина
+            .org_tg @darileushina
     .content_meetups
       .container
         h2 Контакты
         a.maillink(href="mailto:hello@msk-vuejs.ru") hello@msk-vuejs.ru
+    .tentacles
+      .container
+        h2 No mental tentacles allowed!
 
 
 </template>
@@ -229,6 +252,37 @@
 
     &:hover {
       text-decoration: underline;
+    }
+  }
+
+  .tentacles {
+    text-align: center;
+  }
+
+  .org_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+    margin: 0 -16px;
+    padding: 0 0 64px 0;
+  }
+
+  .org {
+    flex: 0 1 auto;
+    align-self: auto;
+    padding: 16px;
+
+    & img {
+      width: 300px;
+      height: 300px;
+    }
+
+    &_name {
+      font-size: 20px;
+      padding: 8px 0;
     }
   }
 </style>

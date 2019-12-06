@@ -17,13 +17,15 @@
             "time":"19:30 — 20:00",
             "header":" Тихон Соколов – Full Stack Developer, msk vue.js",
             "name":"Vue Composition (Function) API",
-            "description":"В будущем мы будем писать более понятные, тестируемые и независимые компоненты. Как в этом поможет новый Composition API, который уже сейчас можно попробовать."
+            "description":"В будущем мы будем писать более понятные, тестируемые и независимые компоненты. Как в этом поможет новый Composition API, который уже сейчас можно попробовать.",
+            "video":"qia9rE6rUj0"
         },
         {
             "time":"20:00 — 20:30",
             "header":"Арсений Кутузов – Senior Frontend Developer, Raiffeisen Bank",
             "name": "Как сколотить состояние на Vue",
-            "description":"Описания не будет!"
+            "description":"Описания не будет!",
+            "video":"kr_wOYfUojQ"
         },
         {
             "time":"20:30 — 21:00",
@@ -33,7 +35,8 @@
             "time":"21:00 — 21:30",
             "header":"Ольга Маланова - Senior Frontend Developer, msk vue.js",
             "name": "Запись аудио в браузерах",
-            "description":"Описание уточняется"
+            "description":"Описание уточняется",
+            "video":"-pjQGpK_nGw"
         },
         {
             "time":"21:30 — 22:00",

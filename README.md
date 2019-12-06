@@ -30,6 +30,11 @@
             "name":"ДомКлик"
         },
         {
+            "img":"/img/ingrammicro.png",
+            "link":"https://www.ingrammicro.com/",
+            "name":"Ingram Micro Cloud"
+        },
+        {
             "img":"/img/tproger_transparent_big.png",
             "link":"https://tproger.ru/",
             "name":"Tproger"

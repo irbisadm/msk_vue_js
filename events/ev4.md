@@ -6,7 +6,6 @@
     "kind":"meetup",
     "number":"#4",
     "place":"Офис Raiffeisenbank",
-    "regLink":"https://voximplant.timepad.ru/event/1058609/",
     "callForPaper":"https://docs.google.com/forms/d/e/1FAIpQLSdjvYW4xu9MT-8VRIIPTF5FSzq0ePEQGrH28h0z_xUtcdI9ew/viewform",
     "timeline":[
         {

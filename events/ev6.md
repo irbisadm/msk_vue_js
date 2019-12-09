@@ -6,6 +6,7 @@
     "kind":"meetup",
     "number":"#6",
     "place":"Офис Ingram Micro Cloud",
+    "regLink":"https://voximplant.timepad.ru/event/1139233/",
     "callForPaper":"https://docs.google.com/forms/d/e/1FAIpQLSdjvYW4xu9MT-8VRIIPTF5FSzq0ePEQGrH28h0z_xUtcdI9ew/viewform",
     "timeline":[
         {

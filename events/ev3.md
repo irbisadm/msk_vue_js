@@ -6,7 +6,6 @@
     "kind":"meetup",
     "number":"#3",
     "place":"Офис Mail.ru",
-    "regLink":"https://corp.mail.ru/ru/press/events/628/",
     "callForPaper":"https://docs.google.com/forms/d/e/1FAIpQLSdjvYW4xu9MT-8VRIIPTF5FSzq0ePEQGrH28h0z_xUtcdI9ew/viewform",
     "timeline":[
         {

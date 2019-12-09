@@ -66,7 +66,7 @@
         },
         {
             "img":"/img/itmeeting.jpg",
-            "link":"https://t.me/ITMeeting",
+            "link":"https://itmeeting.ru",
             "name":"IT Meeting"
         },
         {

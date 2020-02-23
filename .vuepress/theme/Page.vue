@@ -23,6 +23,7 @@
       .container
         h2 О событии
         .agenda {{$page.frontmatter.agenda}}
+
     Videos(:items="eventsVideo",title="Видео с митапа")
     Galery(:gallery="eventGallery",title="Фото с митапа")
     .container_timing(v-if="$page.frontmatter.timeline && $page.frontmatter.timeline.length")
@@ -35,6 +36,14 @@
               .schedule-name(v-if="call.name") {{call.name}}
               .schedule-title(v-if="call.header") {{call.header}}
               .schedule-description(v-if="call.description", v-html="call.description")
+    .content_about(v-if="$page.frontmatter.pandaTogether")
+      .container
+        .row-flex_content
+          .item
+            h2 Делаем вместе!
+            p Митап организован совместно с <a href="https://panda-meetup.ru"> Panda Meetup</a>
+          .item.sticker_item
+            img(src="/img/panda-logo.png")
     .container_speakers(v-if="$page.frontmatter.speakers && $page.frontmatter.speakers.length")
       .container
         h2 Спикеры
@@ -55,10 +64,10 @@
 </template>
 
 <script lang="ts">
-  import {Component, Vue} from "vue-property-decorator";
-  import Partners from "./Partners.vue";
-  import Videos from "./Videos.vue";
-  import Galery from "./Galery.vue";
+  import {Component, Vue} from 'vue-property-decorator';
+  import Partners from './Partners.vue';
+  import Videos from './Videos.vue';
+  import Galery from './Galery.vue';
 
   @Component({
     components: {Partners, Videos, Galery},

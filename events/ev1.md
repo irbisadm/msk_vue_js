@@ -6,7 +6,7 @@
     "kind":"meetup",
     "number":"#1",
     "place":"Офис Voximplant",
-    "callForPaper":"https://docs.google.com/forms/d/e/1FAIpQLSdjvYW4xu9MT-8VRIIPTF5FSzq0ePEQGrH28h0z_xUtcdI9ew/viewform",
+    "callForPaper":"https://forms.gle/wcjQHzeqrR98wkQv9",
     "timeline":[
         {
             "time":"18:30 — 19:00",

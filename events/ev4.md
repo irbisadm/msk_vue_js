@@ -6,7 +6,7 @@
     "kind":"meetup",
     "number":"#4",
     "place":"Офис Raiffeisenbank",
-    "callForPaper":"https://docs.google.com/forms/d/e/1FAIpQLSdjvYW4xu9MT-8VRIIPTF5FSzq0ePEQGrH28h0z_xUtcdI9ew/viewform",
+    "callForPaper":"https://forms.gle/wcjQHzeqrR98wkQv9",
     "timeline":[
         {
             "time":"18:30 — 19:30",
@@ -74,6 +74,10 @@
             "name":"Tproger"
         },
     ],
+    "gallery":{
+        "to":38,
+        "path":"/artifacts/ev4/"
+    },
     "map":"https://yandex.ru/map-widget/v1/-/CGcB6Zke",
     "addr":"Офис Raiffeisenbank (пр-т Андропова, 18к2).",
 }

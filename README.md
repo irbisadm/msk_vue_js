@@ -1,8 +1,8 @@
 ---
 {
     "home": "true",
-    "callForPaper":"https://docs.google.com/forms/d/e/1FAIpQLSdjvYW4xu9MT-8VRIIPTF5FSzq0ePEQGrH28h0z_xUtcdI9ew/viewform",
-    "callForPlace":"https://docs.google.com/forms/d/e/1FAIpQLSdT8T-cpeoFCpTD09OIvpZhtDcS_SPQBi50ZoPWi5BZbhrhfw/viewform",
+    "callForPaper":"https://forms.gle/wcjQHzeqrR98wkQv9",
+    "callForPlace":"https://forms.gle/yhBfyovFxjjpfKtz7",
     "partners":[
         {
             "img":"/img/voximplant.png",
@@ -35,6 +35,11 @@
             "name":"Ingram Micro Cloud"
         },
         {
+            "img":"/img/balchug.svg",
+            "link":"http://gastro.market/",
+            "name":"Гастромаркет Балчуг"
+        },
+        {
             "img":"/img/tproger_transparent_big.png",
             "link":"https://tproger.ru/",
             "name":"Tproger"
@@ -48,7 +53,8 @@
             "img":"/img/itmeeting.jpg",
             "link":"https://itmeeting.ru",
             "name":"IT Meeting"
-        }
+        },
+        
     ],
     "artifacts":[]
 }

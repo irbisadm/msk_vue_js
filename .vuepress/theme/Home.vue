@@ -64,17 +64,17 @@
 </template>
 
 <script lang="ts">
-  import {Component, Vue} from "vue-property-decorator";
-  import Partners from "./Partners.vue";
-  import Events from "./Events.vue";
-  import Videos from "./Videos.vue";
+  import {Component, Vue} from 'vue-property-decorator';
+  import Partners from './Partners.vue';
+  import Events from './Events.vue';
+  import Videos from './Videos.vue';
 
   @Component({
     components: {Partners, Events, Videos},
   })
   export default class Home extends Vue {
     get activeEvents() {
-      const events: any[] = this["$site"].pages.filter(i => i.path.indexOf("/events/") !== -1);
+      const events: any[] = this['$site'].pages.filter(i => i.path.indexOf('/events/') !== -1);
       const activeEvents = events.filter(ev => {
         if (ev.frontmatter && ev.frontmatter.timestamp) {
           return (ev.frontmatter.timestamp > (new Date()).getTime() / 1000);
@@ -84,9 +84,20 @@
       return activeEvents || [];
     }
 
+    get endedEvents() {
+      const events: any[] = this['$site'].pages.filter(i => i.path.indexOf('/events/') !== -1);
+      const endedEvents = events.filter(ev => {
+        if (ev.frontmatter && ev.frontmatter.date) {
+          return (ev.frontmatter.timestamp <= (new Date()).getTime() / 1000);
+        }
+        return false;
+      }).sort(this.sortByDateDesc);
+      return endedEvents || [];
+    }
+
     sortByDate(a, b): number {
-      const parsedDateA = a.frontmatter.date.split(".").reverse().join("");
-      const parsedDateB = b.frontmatter.date.split(".").reverse().join("");
+      const parsedDateA = a.frontmatter.date.split('.').reverse().join('');
+      const parsedDateB = b.frontmatter.date.split('.').reverse().join('');
       if (parsedDateA === parsedDateB) return 0;
       if (parsedDateA > parsedDateB) return 1;
       return -1;
@@ -108,15 +119,8 @@
       return videos;
     }
 
-    get endedEvents() {
-      const events: any[] = this["$site"].pages.filter(i => i.path.indexOf("/events/") !== -1);
-      const endedEvents = events.filter(ev => {
-        if (ev.frontmatter && ev.frontmatter.date) {
-          return (ev.frontmatter.timestamp <= (new Date()).getTime() / 1000);
-        }
-        return false;
-      }).sort(this.sortByDate);
-      return endedEvents || [];
+    sortByDateDesc(a, b): number {
+      return this.sortByDate(a, b) * -1;
     }
   }
 </script>

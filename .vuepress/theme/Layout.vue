@@ -7,11 +7,11 @@
 </template>
 
 <script lang="ts">
-  import {Component, Vue} from "vue-property-decorator";
-  import Home from "./Home.vue";
-  import Footer from "./Footer.vue";
-  import Page from "./Page.vue";
-  import School from "./School.vue";
+  import {Component, Vue} from 'vue-property-decorator';
+  import Home from './Home.vue';
+  import Footer from './Footer.vue';
+  import Page from './Page.vue';
+  import School from './School.vue';
 
   @Component({
     components: {School, Home, Footer, Page},
@@ -188,13 +188,13 @@
       position: relative;
       color: #232E4B;
       @media only screen and (min-width: 768px) {
-        width: calc(33% - 16px);
+        width: calc(33% - 18px);
       }
       @media only screen and (min-width: 1024px) {
-        width: calc(33% - 16px);
+        width: calc(33% - 18px);
       }
       @media only screen and (min-width: 1440px) {
-        width: calc(25% - 16px);
+        width: calc(25% - 18px);
       }
 
       &_link {
